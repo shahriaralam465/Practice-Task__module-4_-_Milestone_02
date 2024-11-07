@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Poppins;
+}
+
+
+/* --------COLOR CODE--------- */
+.text-gray {
+    color: rgb(24, 25, 31);
+}
+
+.gray {
+    color: rgb(120, 120, 133);
+}
+
+.dark-color {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.dark-1 {
+    color: rgb(58, 58, 58);
+}
+
+
+/* ------------Shared_Styles------------- */
+
+.flex {
+    display: flex;
+}
+
+header {
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+}
+
+.btn-primary {
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* ----------Header_related_styles---------- */
+/* navbar */
+nav,
+.banner,
+.companies {
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 1140px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+
+.logo-title {
+    font-size: 1.5rem;
+}
+
+.navigation-bar ul {
+    width: 463px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.navigation-bar ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* nav bar ends */
+
+/* banner related styles */
+.banner {
+    gap: 120px;
+    /* border: 2px solid blue; */
+    padding-bottom: 50px;
+}
+
+.content-container {
+    /* border: 2px solid red; */
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 24px;
+}
+
+.banner-title {
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 505px;
+    text-align: left;
+}
+
+.image-container {
+    /* border: 2px solid red; */
+    background-image: url(/images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* -------------Popular collection section styles --------------- */
+
+.collection {
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: repeat(200px, 1fr);
+    justify-items: center;
+}
+
+.products {
+    margin-top: 33px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    width: 300px;
+    padding: 14px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.141);
+    background: rgb(255, 255, 255);
+    transition: transform .5s, background-color .2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: rgba(109, 106, 255, 0.297);
+}
+
+#price {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card .card-image {
+    width: 300px;
+    height: 256px;
+}
+
+.card .rating-box div>img {
+    width: 11px;
+}
+
+.card .rating-box {
+    gap: 20px;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+
+#see_more {
+    margin-top: 50px;
+    background-color: #fff;
+    border: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+}
+
+/*------------Feature section related styles------------*/
+.feature-product {
+    /* border: 2px solid red; */
+    max-width: 1140px;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+}
+
+.feature-title {
+    font-size: 2.375rem;
+    font-weight: 700;
+    text-align: left;
+}
+.feature-description{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+#feature-button{
+    border-radius: 5px;
+}
+
+
+/* Footer related styles */
+footer{
+    background-color: #0a0826;
+    display: block;
+    text-align: center;
+    padding: 40px 0px;
+}
+footer #footer-title, #footer-description{
+    color: #fff;
+}
